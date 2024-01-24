@@ -13,7 +13,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/list_users_app">
       <App />
     </BrowserRouter>
   </React.StrictMode>,

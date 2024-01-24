@@ -1,5 +1,5 @@
 {
-  "homepage": "/",
+  "homepage": "https://annabasenyuk.github.io/list_users_app",
   "name": "list_users_app",
   "version": "0.1.0",
   "private": true,
@@ -25,7 +25,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build $GH_TOKEN",
-    "start": "react-scripts start",
+    "start": "react-scripts start --url=/list_users_app",
     "build": "react-scripts build",
     "test": "jest --config jest.config.ts",
     "eject": "react-scripts eject",
