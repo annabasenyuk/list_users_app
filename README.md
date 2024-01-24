@@ -6,7 +6,7 @@
 This is a web application that displays a list of users. The project is built using React and TypeScript.
 
 
-#Overview
+# Overview
 
 
 The application has two main pages:
@@ -17,7 +17,7 @@ User Details Page: Displays detailed information about a specific user, such as 
 
 
 
-#Installation
+# Installation
 
 
 Clone the repository:
@@ -35,7 +35,7 @@ Run the application:
 The application will be available at http://localhost:3000.
 
 
-#Technologies and Libraries Used
+# Technologies and Libraries Used
 
 
 React
@@ -49,7 +49,7 @@ Jest and @testing-library/react for testing
 SASS for styling
 
 
-#Testing
+# Testing
 
 
 The application has unit tests for defined components and functionality. You can run the tests using the command:
