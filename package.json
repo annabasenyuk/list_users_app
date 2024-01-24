@@ -1,6 +1,6 @@
 {
   "homepage": ".",
-  "name": "list-users-app",
+  "name": "list_users_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
