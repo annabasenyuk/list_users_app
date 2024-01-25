@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { User } from '../../types/User';
+import { UserDetails } from '../UserDetails/UserDetails';
 import './DetailsPage.scss';
 import webIcon from '../../styles/icons/web-browser-icon.svg';
 
@@ -48,6 +49,8 @@ export const DetailsPage: React.FC<Props> = ({ users }) => {
               <a
                 href={`http://${user.website}`}
                 className="cover__web-title"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {user.website}
               </a>
@@ -55,42 +58,7 @@ export const DetailsPage: React.FC<Props> = ({ users }) => {
           </div>
         </div>
 
-        <div>
-          <div className="description">
-            <div className="description__title">Company</div>
-            <div className="description__data">{user.company.name}</div>
-          </div>
-
-          <div className="description">
-            <div className="description__title">Description</div>
-            <div className="description__data">{user.company.catchPhrase}</div>
-          </div>
-
-          <div className="description">
-            <div className="description__title">Purpose</div>
-            <div className="description__data">{user.company.bs}</div>
-          </div>
-
-          <div className="description phone">
-            <div className="description__title">Phone</div>
-            <div className="description__data">{user.phone}</div>
-          </div>
-
-          <div className="description">
-            <div className="description__title">Address</div>
-            <div className="description__data">{`${user.address.street}, ${user.address.suite}`}</div>
-          </div>
-
-          <div className="description">
-            <div className="description__title">City</div>
-            <div className="description__data">{user.address.city}</div>
-          </div>
-
-          <div className="description">
-            <div className="description__title">Zip code</div>
-            <div className="description__data">{user.address.zipcode}</div>
-          </div>
-        </div>
+        <UserDetails user={user} />
       </div>
     </section>
   );

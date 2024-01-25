@@ -85,24 +85,3 @@
     }
   }
 }
-
-.description {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  padding-bottom: 5px;
-
-  &__title {
-    color: $text-color-second;
-    font-size: 16px;
-    align-items: center;
-  }
-
-  &__data {
-    font-size: 16px;
-    align-items: center;
-  }
-}
-
-.phone {
-  margin: 20px 0;
-}
